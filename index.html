@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/hmstyles.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="/css/prdstyles.css">
+    
+</head>
+<body>
+    <div id="top" style="position: absolute;top: 0;"></div>
+    <div id="hdr">
+        <h3 class="logo">MM Jewellary</h3>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#" onclick="event.preventDefault(); document.getElementById('top').scrollIntoView({ behavior: 'smooth' });">Home</a></li>
+                <li><a href="#" onclick="event.preventDefault(); document.getElementById('prdstrt').scrollIntoView({ behavior: 'smooth' });">Products</a></li>
+                <li><a href="/pages/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="caropart">
+        <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+            <li id="carousel__slide1"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper">
+                <a href="#carousel__slide4"
+                class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2"
+                class="carousel__next">Go to next slide</a>
+            </div>
+            </li>
+            <li id="carousel__slide2"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1"
+                class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3"
+                class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide3"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2"
+                class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide4"
+                class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide4"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3"
+                class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1"
+                class="carousel__next">Go to first slide</a>
+            </li>
+        </ol>
+        </section>
+    </div>
+    <div class="products">
+        <div class="pg">
+            <h1 id="prdstrt">Our Products</h1>
+            <div id="prds">
+                <div class="prdGO" id="r1c2">
+                    <img src="/imgs/icons/pendant.png" alt="">
+                    <h2>Necklace</h2>
+                </div>
+                <div class="prdGO" id="r1c2">
+                    <img src="/imgs/icons/diamond-ring.png" alt="">
+                    <h2>Rings</h2>
+                </div>
+                <div class="prdGO" id="r2c1">
+                    <img src="/imgs/icons/bangle.png" alt="">
+                    <h2>Bangles</h2>
+                </div>
+                <div class="prdGO" id="r2c2">
+                    <img src="/imgs/icons/earings.png" alt="">
+                    <h2>Earings</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
